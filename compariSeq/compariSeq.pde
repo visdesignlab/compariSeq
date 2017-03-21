@@ -11,7 +11,7 @@
   String dataFileA = "panel-a.txt";
   String dataFileB = "panel-b.txt";
   String dataFileC = "panel-c.txt";
-  String fileLocation = "../../data/";
+  String fileLocation = "data/";
 
 
 // booleans to activate and deactivate features:
@@ -40,8 +40,8 @@
 // drawing options:
   
   // size and color of screen
-  int w = 1400;
-  int h = 800;
+  int w = 1400; // this has to be set manually below as well in Processing 3
+  int h = 800; // this has to be set manually below as well in Processing 3
   color bg = color(217, 217, 217);
   
   // size and color of points
@@ -59,15 +59,16 @@
   
   // font for amino acids
   int fontSize = 18;
-  PFont font = createFont("GillSans-Bold", fontSize);
+  PFont font;
 
 
 
 // initial setup
 void setup(){
-  size(w, h);
+  size(1400, 800);
   
   // set up font
+  font = createFont("GillSans-Bold", fontSize);
   textFont(font);
   
   // set up amino acid colors
