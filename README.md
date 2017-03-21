@@ -1,4 +1,4 @@
-# CompariSeq
+# compariSeq
 
 _By: Sean McKenna, Alex Bigelow, P. Samuel Quinan_
 
