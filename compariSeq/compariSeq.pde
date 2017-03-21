@@ -46,7 +46,7 @@
   
   // size and color of points
   IntDict aminoAcids = new IntDict();
-  color[] colors = new color[20];
+  color[] colors = new color[21]; // adding a null point for undetermined amino acids, 'X'
   
   // thresholding amino acids by pixels
   float aminoThreshold = 0.15;
@@ -329,4 +329,7 @@ void setColors(){
   colors[18] = color(228, 216, 94);
   aminoAcids.set("M", 19);
   colors[19] = color(255, 248, 141);
+  // for an undetermined amino acid, not fully supported yet
+  aminoAcids.set("X", 20);
+  colors[20] = color(0, 0, 0);
 }
